@@ -29,4 +29,12 @@ Spring框架的特征大概是由20个模块组织起来的。这些模块又聚
 
 ![Module Structure](https://raw.githubusercontent.com/zhouhaibing089/translation/master/Spring/Part1%20-%20Overview/module-structure.png)
 
+接下来几小节列出了每个特征下可用的模块，以及他们的制品名称(对于依赖管理工具游泳)
 
+**核心容器(Core Container)**
+
+由*spring-beans*，*spring-context*，*spring-expression*这几个模块组成。
+
+spring-core和spring-beans模块是整个框架中最基本的部分，包括控制反转和依赖注入两个重要的功能，`BeanFactory`是工厂模式的一个精细实现，它可以让你不必使用但里模式，并且实现了将依赖对象的配置和规格进行分离。
+
+spring-context模块基于core和beans模块建立，它为对象的访问提供了框架式的访问方式，就像JNDI那样。context模块继承了beans模块中的功能，并添加了国际化支持(比如说，资源包)，事件传播，资源加载和context的透明化创建(比如说在Servlet环境中)。context模块还支持Java EE的种种特征，比如EJB，JMX和基本的远程。`ApplicationContext`是context模块中的关键接口。
