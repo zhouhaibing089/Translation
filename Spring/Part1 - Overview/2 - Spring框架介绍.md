@@ -22,3 +22,11 @@ Java应用可以指代简单的各种的Applet，也可以指代n层结构的服
 虽然Java平台提供了很多应用开发时需要的功能，但它却缺乏一种可以组织各个基本构建块(building block)的方式，而是由架构师和开发人员自行管理。是的，你会想到在应用中使用设计模式来组织各种各样的类和对象实例，比如工厂模式、抽象工厂模式、构建者模式、装饰者模式和服务定位模式。但是，设计模式只描述了：模式名字，做了什么，什么时候应用，解决了什么问题等等，它们只是一个十分形式化的最佳实践描述，作为开发人员你还是得自己在应用中实现它们。
 
 Spring框架的控制反转组件解决了这个问题，它提供了一种形式化的方式来组织各个分散的组件，并将其组装成一个可以立即投入使用的应用。Spring框架将设计模式看成一等对象，并让其可以集成在你的应用中。现在有很多组织和机构通过这种方式使用Spring框架来开发强壮，可维护的应用。
+
+### 模块
+
+Spring框架的特征大概是由20个模块组织起来的。这些模块又聚集在Core Container，Data Access/Integration，Web，AOP，Instrumentation，Messaging和Test这些组中。下面这张图描述了Spring框架中的模块组织形式。
+
+![Module Structure](https://raw.githubusercontent.com/zhouhaibing089/translation/master/Spring/Part1%20-%20Overview/module-structure.png)
+
+
