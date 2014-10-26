@@ -29,7 +29,7 @@ Spring框架的特征大概是由20个模块组织起来的。这些模块又聚
 
 ![Module Structure](https://raw.githubusercontent.com/zhouhaibing089/translation/master/Spring/Part1%20-%20Overview/module-structure.png)
 
-接下来几小节列出了每个特征下可用的模块，以及他们的制品名称(对于依赖管理工具游泳)
+接下来几小节列出了每个特征下可用的模块，以及他们的制品名称(对于依赖管理工具有用)
 
 **核心容器(Core Container)**
 
