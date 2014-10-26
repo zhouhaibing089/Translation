@@ -38,3 +38,5 @@ Spring框架的特征大概是由20个模块组织起来的。这些模块又聚
 spring-core和spring-beans模块是整个框架中最基本的部分，包括控制反转和依赖注入两个重要的功能，`BeanFactory`是工厂模式的一个精细实现，它可以让你不必使用单例模式，并且实现了将依赖对象的配置和规格进行分离。
 
 spring-context模块基于core和beans模块建立，它为对象的访问提供了框架式的访问方式，就像JNDI那样。context模块继承了beans模块中的功能，并添加了国际化支持(比如说，资源包)，事件传播，资源加载和context的透明化创建(比如说在Servlet环境中)。context模块还支持Java EE的种种特征，比如EJB，JMX和基本的远程。`ApplicationContext`是context模块中的关键接口。
+
+spring-expression模块提供了一个强大的表达式语言(expression language)，可以在运行时查询和操作对象。此模块是通用表达语言(unified EL，在JSP2.1规范中定义)的一个扩展，它支持设置和获取对象属性值，对属性赋值，调用方法，访问数组、集合中的内容，索引取值，逻辑和算术操作符，具名变量，从IoC容器中查询对象，它还支持list的映射，选择和聚合操作。
